@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ExportMapper extends BaseMapper<Student> {
 
-
     @Select("select count(1) from t_student")
     int count();
 

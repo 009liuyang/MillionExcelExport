@@ -50,10 +50,6 @@ public class OSSUtil {
         }
     }
 
-    public String getDownUrlPrefix(){
-        return "https://" + bucketName + "." + endpoint.replace("http://", "") + "/" + env;
-    }
-
     /**
      * 上传
      *

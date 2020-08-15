@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ly</groupId>
-    <artifactId>study</artifactId>
+    <artifactId>export</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>study</name>
+    <name>export</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
