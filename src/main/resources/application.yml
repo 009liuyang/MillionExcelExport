@@ -1,0 +1,44 @@
+spring:
+
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/friends?characterEncoding=utf8
+    username: root
+    password: Yang.521
+    characterEncoding: UTF-8
+    useUnicode: true
+
+  mybatis:
+    configuration:
+      mapUnderscoreToCamelCase: true
+    typeAliasesPackage: com.ly.study
+
+  server:
+      tomcat:
+          access_log_enabled: true
+          basedir: target/tomcat
+          port: 8080
+          context-path: /
+      session:
+          timeout: 3600
+
+
+  logging:
+    config: classpath:/logback.xml
+
+# 阿里云oss
+oss:
+  config:
+    endpoint: http://oss-cn-beijing.aliyuncs.com
+    accessKeyId: accessKeyId
+    accessKeySecret: accessKeySecret
+    bucketName: bucketName
+    env: test/
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.talpay.finance.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql
+
